@@ -1,40 +1,19 @@
-# Portfolio-Template
-A Portfolio/Resume website template for Programmers, Geeks, Developers, Hackers etc.
+# Демотека Никиты Сенько
 
-### Highlights
-1. Setup is very easy and you get a portfolio template of your own for free.
-2. To add your details, you just need simple editing skills. No code changes required!
-3. Simple and Fast website User Interface.
+[Открыть демотеку](https://hacker-niki.github.io/demos/) · [Личное портфолио](https://hacker-niki.github.io/)
 
-### Website UI Gallary
-#### About Tab
-![About Tab](https://i.postimg.cc/WpCWc7gB/1.png)
+Коллекция из 12 публичных проектов. В каталоге можно перейти к полной игре THEGame и оригинальной веб-версии тюнера kTone. Десять других демо запускаются прямо с GitHub Pages, включая таймер HoldBeat, генератор DOCX, TestGen и три учебные песочницы для API и сетей.
 
-#### Skills Tab
-![Skills Tab](https://i.postimg.cc/HL6zZ0TP/2.png)
+## Локальный запуск
 
-#### Project Tab
-![Project Tab](https://i.imgur.com/u4oyV6r.png)
+Из корня репозитория выполните:
 
-#### Contact Tab
-![Contact Tab](https://i.postimg.cc/Y0WxCJYJ/4.png)
+```sh
+python3 -m http.server 8000
+```
 
-### Demo
-For Demo of this template you can visit http://0xprateek-portfolio-template.rf.gd
+Откройте [каталог на localhost](http://localhost:8000/demos/). Файлы DOCX и словари для тестов обрабатываются в браузере.
 
-### Quick Start
-If you are reading this then I will assume that you know something about code and want to make a resume website of yours then this open-source project may help you setup it to showcase all your creations without effort.
-- For adding your avatar , You have to replace images/my.jpg with your square photo [Perfect size : 160 x 160].
-- For changing background image, You need to replace images/floor.jpg with your prefered background.
-- For changing rest of the information, simply open index.html and you can easily understand everything.
+## Авторы и исходники
 
-
-### Contributing
-Any and all contributions, issues, features and tips are welcome.
-
-### License
-**Portfolio-Template** is licence under [GPL v3.0 license](https://www.gnu.org/licenses/gpl-3.0.en.html)
-
-### Contact
-
-For any Suggestion / Ideas ping me at [@prateekis1](https://twitter.com/prateekis1)
+Ссылки на исходные проекты есть в каждой карточке. Для kTone в каталоге указан Android-порт hacker-niki и отдельно открывается веб-версия автора тюнера. Страница резюме основана на Portfolio-Template Пратика Мишры. [Лицензия исходного шаблона](LICENSE) · [Лицензия JSZip](demos/lab/docsmanager-zip-LICENSE.txt).

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#10151a" />
+    <title>Крестики-нолики · Демотека</title>
+    <link rel="icon" href="../media/icon.png" />
+    <link rel="stylesheet" href="../demo-shell.css" />
+    <link rel="stylesheet" href="playground.css" />
+    <script defer src="grid.js"></script>
+  </head>
+  <body class="grid">
+    <nav class="shell-top" aria-label="Навигация">
+      <a href="../#catalog" class="home">Все демо</a
+      ><a href="https://github.com/hacker-niki/game">Исходники на GitHub</a>
+    </nav>
+    <main class="lab-wrap">
+      <header class="lab-lead">
+        <span class="lab-label">Blazor · Локальная партия</span>
+        <h1>Крестики-нолики</h1>
+        <p>
+          Соберитесь у одного экрана. Побеждает тот, кто займёт символами целую строку, столбец или диагональ.
+        </p>
+      </header>
+      <section class="lab-panel grid-panel">
+        <div class="grid-options">
+          <label
+            >Поле
+            <select id="board-size" class="lab-select">
+              <option value="3">3 × 3</option>
+              <option value="4">4 × 4</option>
+              <option value="5">5 × 5</option>
+              <option value="6">6 × 6</option>
+            </select></label
+          >
+          <label
+            >Игроки
+            <select id="players" class="lab-select">
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select></label
+          ><button id="reset-game" class="lab-button">Новая партия</button>
+        </div>
+        <p id="turn" class="turn" role="status"></p>
+        <div id="board" aria-label="Игровое поле"></div>
+      </section>
+    </main>
+  </body>
+</html>

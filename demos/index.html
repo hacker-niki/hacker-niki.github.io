@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111414" />
+    <meta
+      name="description"
+      content="Игры, приложения и инструменты Никиты Сенько. 12 проектов с демо, которые можно запустить в браузере."
+    />
+    <meta property="og:title" content="Демотека · hacker-niki" />
+    <meta property="og:description" content="12 игр, приложений и инструментов с демо в браузере." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://hacker-niki.github.io/demos/media/thegame.webp" />
+    <link rel="canonical" href="https://hacker-niki.github.io/demos/" />
+    <link rel="icon" href="media/icon.png" />
+    <title>Демотека · Никита Сенько</title>
+    <link rel="stylesheet" href="site.css" />
+    <script src="catalog.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip" href="#catalog">Перейти к каталогу</a>
+    <header class="topbar">
+      <div class="container top-inner">
+        <a class="brand" href="#top" aria-label="hacker-niki, начало страницы"
+          ><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>hacker-niki</span></a
+        >
+        <nav aria-label="Основная навигация">
+          <a href="#catalog">Каталог</a
+          ><a class="github" href="https://github.com/hacker-niki"
+            >GitHub <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <div class="intro">
+        <div>
+          <p class="overline"><span aria-hidden="true"></span> Никита Сенько</p>
+          <h1>Демотека<span>.</span></h1>
+        </div>
+        <p class="intro-copy">
+          Мои игры, приложения и инструменты.<br />
+          Выбери проект и попробуй его в браузере.
+        </p>
+      </div>
+      <section class="feature" aria-label="Избранные проекты">
+        <div class="feature-stage">
+          <article
+            id="featured-thegame"
+            class="feature-panel feature-thegame"
+            aria-labelledby="title-thegame"
+          >
+            <div class="feature-art"><img src="media/thegame.webp" alt="" fetchpriority="high" /></div>
+            <div class="feature-content">
+              <p class="feature-kicker"><span aria-hidden="true">✳</span> Игра в фокусе</p>
+              <h2 id="title-thegame">THEGame</h2>
+              <p class="feature-copy">
+                Беги в ритме. Меняй полосу, обходи препятствия и превращай музыку в трассу.
+              </p>
+              <a class="primary-action" href="https://hacker-niki.github.io/THEGame/play/"
+                ><span class="play" aria-hidden="true"></span>Играть сейчас</a
+              >
+            </div>
+          </article>
+          <article
+            id="featured-holdbeat"
+            class="feature-panel feature-holdbeat"
+            aria-labelledby="title-holdbeat"
+            hidden
+          >
+            <div class="feature-art"><img src="media/holdbeat.webp" alt="" loading="lazy" /></div>
+            <div class="feature-content">
+              <p class="feature-kicker"><span aria-hidden="true">✳</span> Приложение в фокусе</p>
+              <h2 id="title-holdbeat">HoldBeat</h2>
+              <p class="feature-copy">
+                Выбери упражнение и запусти подход. Звук подскажет, когда сделать паузу.
+              </p>
+              <a class="primary-action" href="lab/holdbeat.html"
+                ><span class="play" aria-hidden="true"></span>Запустить таймер</a
+              >
+            </div>
+          </article>
+          <article
+            id="featured-docsmanager"
+            class="feature-panel feature-docsmanager"
+            aria-labelledby="title-docsmanager"
+            hidden
+          >
+            <div class="feature-art"><img src="media/docsmanager.webp" alt="" loading="lazy" /></div>
+            <div class="feature-content">
+              <p class="feature-kicker"><span aria-hidden="true">✳</span> Инструмент в фокусе</p>
+              <h2 id="title-docsmanager">Docs Manager</h2>
+              <p class="feature-copy">
+                Преврати один шаблон в готовое письмо. Измени поля и скачай результат в DOCX.
+              </p>
+              <a class="primary-action" href="lab/docsmanager.html"
+                ><span class="play" aria-hidden="true"></span>Собрать документ</a
+              >
+            </div>
+          </article>
+        </div>
+        <div class="feature-tabs" aria-label="Выбор проекта" role="group" hidden>
+          <button type="button" aria-controls="featured-thegame" aria-pressed="true" data-feature="thegame">
+            <span class="tab-number">01</span><span>THEGame</span
+            ><span class="tab-indicator" aria-hidden="true"></span></button
+          ><button
+            type="button"
+            aria-controls="featured-holdbeat"
+            aria-pressed="false"
+            data-feature="holdbeat"
+          >
+            <span class="tab-number">02</span><span>HoldBeat</span
+            ><span class="tab-indicator" aria-hidden="true"></span></button
+          ><button
+            type="button"
+            aria-controls="featured-docsmanager"
+            aria-pressed="false"
+            data-feature="docsmanager"
+          >
+            <span class="tab-number">03</span><span>Docs Manager</span
+            ><span class="tab-indicator" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+      <section class="catalog" id="catalog" aria-labelledby="catalog-title">
+        <div class="catalog-head">
+          <h2 id="catalog-title">Каталог <span>12</span></h2>
+          <label class="search" hidden
+            ><span class="glass" aria-hidden="true"></span
+            ><input
+              id="search"
+              type="search"
+              aria-label="Найти проект"
+              placeholder="Найти проект"
+              autocomplete="off"
+          /></label>
+        </div>
+        <div class="tools" hidden>
+          <div class="filters" role="group" aria-label="Категория проекта">
+            <button type="button" data-filter="Все" aria-pressed="true">Все<small>12</small></button
+            ><button type="button" data-filter="Игры" aria-pressed="false">Игры<small>3</small></button
+            ><button type="button" data-filter="Приложения" aria-pressed="false">
+              Приложения<small>3</small></button
+            ><button type="button" data-filter="Инструменты" aria-pressed="false">
+              Инструменты<small>6</small>
+            </button>
+          </div>
+          <span id="status" role="status" class="sr"></span>
+        </div>
+        <div class="cards">
+          <article class="card" data-category="Игры">
+            <a
+              href="https://hacker-niki.github.io/THEGame/play/"
+              class="card-cover"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img src="media/thegame.webp" alt="" width="800" height="430" loading="lazy" decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Игры</span><span>Godot</span></div>
+              <h3><a href="https://hacker-niki.github.io/THEGame/play/">THEGame</a></h3>
+              <p>Музыкальный раннер. Уводи куб от препятствий и строй трассы из своих треков.</p>
+              <div class="card-actions">
+                <a href="https://hacker-niki.github.io/THEGame/play/" class="launch"
+                  >Играть <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/THEGame"
+                  class="source"
+                  aria-label="Исходники проекта THEGame на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="Приложения">
+            <a href="lab/holdbeat.html" class="card-cover" tabindex="-1" aria-hidden="true"
+              ><img src="media/holdbeat.webp" alt="" width="800" height="430" loading="lazy" decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Приложения</span><span>Android</span></div>
+              <h3><a href="lab/holdbeat.html">HoldBeat</a></h3>
+              <p>Таймер статических упражнений. Задай подходы и меняй положение по звуковому сигналу.</p>
+              <div class="card-actions">
+                <a href="lab/holdbeat.html" class="launch"
+                  >Запустить таймер <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/HoldBeat"
+                  class="source"
+                  aria-label="Исходники проекта HoldBeat на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="Инструменты">
+            <a href="lab/docsmanager.html" class="card-cover" tabindex="-1" aria-hidden="true"
+              ><img
+                src="media/docsmanager.webp"
+                alt=""
+                width="800"
+                height="430"
+                loading="lazy"
+                decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Инструменты</span><span>C++ / Qt</span></div>
+              <h3><a href="lab/docsmanager.html">Docs Manager</a></h3>
+              <p>Заполни поля в шаблоне письма или загрузи свой DOCX. Готовый документ можно скачать.</p>
+              <div class="card-actions">
+                <a href="lab/docsmanager.html" class="launch"
+                  >Собрать документ <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/docsManager"
+                  class="source"
+                  aria-label="Исходники проекта Docs Manager на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="Приложения">
+            <a href="https://ktone.severnbli.dev/" class="card-cover" tabindex="-1" aria-hidden="true"
+              ><img src="media/ktone.webp" alt="" width="800" height="430" loading="lazy" decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Приложения</span><span>Аудио / Android</span></div>
+              <h3><a href="https://ktone.severnbli.dev/">kTone</a></h3>
+              <p>
+                Хроматический тюнер. Открой веб-приложение автора kTone или посмотри мой порт для Android на
+                GitHub.
+              </p>
+              <div class="card-actions">
+                <a href="https://ktone.severnbli.dev/" class="launch"
+                  >Открыть тюнер <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/kTone"
+                  class="source"
+                  aria-label="Исходники проекта kTone на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="Инструменты">
+            <a href="lab/box-analyze.html" class="card-cover" tabindex="-1" aria-hidden="true"
+              ><img src="media/box.webp" alt="" width="800" height="430" loading="lazy" decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Инструменты</span><span>Python / 3D</span></div>
+              <h3><a href="lab/box-analyze.html">Box Analyzer</a></h3>
+              <p>
+                Измени размеры коробки, поверни её и посмотри объём. Демо показывает геометрию проекта
+                компьютерного зрения.
+              </p>
+              <div class="card-actions">
+                <a href="lab/box-analyze.html" class="launch"
+                  >Повернуть коробку <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/box-analize"
+                  class="source"
+                  aria-label="Исходники проекта Box Analyzer на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="Игры">
+            <a href="lab/dot-race.html" class="card-cover" tabindex="-1" aria-hidden="true"
+              ><img src="media/dot-race.webp" alt="" width="800" height="430" loading="lazy" decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Игры</span><span>C++ / SFML</span></div>
+              <h3><a href="lab/dot-race.html">THEGame2</a></h3>
+              <p>
+                Собирай точки быстрее соперника. Сыграй с ботом на телефоне или вдвоём за одной клавиатурой.
+              </p>
+              <div class="card-actions">
+                <a href="lab/dot-race.html" class="launch">Начать матч <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/THEGame2"
+                  class="source"
+                  aria-label="Исходники проекта THEGame2 на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="Инструменты">
+            <a href="lab/org.html" class="card-cover" tabindex="-1" aria-hidden="true"
+              ><img src="media/org.webp" alt="" width="800" height="430" loading="lazy" decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Инструменты</span><span>Go / PostgreSQL</span></div>
+              <h3><a href="lab/org.html">Org API</a></h3>
+              <p>Собери структуру компании, перенеси отдел и посмотри, как изменится ответ API.</p>
+              <div class="card-actions">
+                <a href="lab/org.html" class="launch">Открыть дерево <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/go-test"
+                  class="source"
+                  aria-label="Исходники проекта Org API на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="Инструменты">
+            <a href="lab/testgen.html" class="card-cover" tabindex="-1" aria-hidden="true"
+              ><img src="media/testgen.webp" alt="" width="800" height="430" loading="lazy" decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Инструменты</span><span>Go / Moodle</span></div>
+              <h3><a href="lab/testgen.html">TestGen</a></h3>
+              <p>Составь тест по своему словарю, проверь себя и скачай вопросы в формате Moodle XML.</p>
+              <div class="card-actions">
+                <a href="lab/testgen.html" class="launch">Составить тест <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/testgen"
+                  class="source"
+                  aria-label="Исходники проекта TestGen на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="Инструменты">
+            <a href="lab/trace.html" class="card-cover" tabindex="-1" aria-hidden="true"
+              ><img src="media/trace.webp" alt="" width="800" height="430" loading="lazy" decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Инструменты</span><span>C++ / IPv4</span></div>
+              <h3><a href="lab/trace.html">traceroute</a></h3>
+              <p>
+                Проследи учебный маршрут пакета по узлам. Меняй TTL и время ожидания, чтобы увидеть, где
+                теряется ответ.
+              </p>
+              <div class="card-actions">
+                <a href="lab/trace.html" class="launch">Пройти маршрут <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/traceroute"
+                  class="source"
+                  aria-label="Исходники проекта traceroute на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="Приложения">
+            <a href="lab/quant.html" class="card-cover" tabindex="-1" aria-hidden="true"
+              ><img src="media/quant.webp" alt="" width="800" height="430" loading="lazy" decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Приложения</span><span>Python / Qt</span></div>
+              <h3><a href="lab/quant.html">Квант</a></h3>
+              <p>Напиши ассистенту команду. Он назовёт время, подбросит монетку или произнесёт твою фразу.</p>
+              <div class="card-actions">
+                <a href="lab/quant.html" class="launch">Начать диалог <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/assistant"
+                  class="source"
+                  aria-label="Исходники проекта Квант на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="Инструменты">
+            <a href="lab/purchase.html" class="card-cover" tabindex="-1" aria-hidden="true"
+              ><img src="media/purchase.webp" alt="" width="800" height="430" loading="lazy" decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Инструменты</span><span>PHP / Symfony</span></div>
+              <h3><a href="lab/purchase.html">API покупки</a></h3>
+              <p>Примени промокод, рассчитай налог по стране и посмотри ответ платёжного симулятора.</p>
+              <div class="card-actions">
+                <a href="lab/purchase.html" class="launch"
+                  >Рассчитать покупку <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/Symfony-backend-test"
+                  class="source"
+                  aria-label="Исходники проекта API покупки на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="card" data-category="Игры">
+            <a href="lab/grid.html" class="card-cover" tabindex="-1" aria-hidden="true"
+              ><img src="media/grid.webp" alt="" width="800" height="430" loading="lazy" decoding="async"
+            /></a>
+            <div class="card-body">
+              <div class="card-meta"><span>Игры</span><span>C# / Blazor</span></div>
+              <h3><a href="lab/grid.html">Крестики-нолики</a></h3>
+              <p>Выбери размер поля и сыграй вдвоём, втроём или вчетвером на одном устройстве.</p>
+              <div class="card-actions">
+                <a href="lab/grid.html" class="launch">Сыграть партию <span aria-hidden="true">→</span></a
+                ><a
+                  href="https://github.com/hacker-niki/game"
+                  class="source"
+                  aria-label="Исходники проекта Крестики-нолики на GitHub"
+                  >Код <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+        <div id="empty" class="empty" hidden>
+          <h3>Ничего не нашлось</h3>
+          <p>Попробуй другое название или категорию.</p>
+          <button type="button" id="clear">Сбросить фильтры</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container foot">
+        <a class="brand" href="#top"
+          ><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>hacker-niki</span></a
+        ><span>Никита Сенько</span
+        ><a href="https://github.com/hacker-niki?tab=repositories">Все репозитории ↗</a>
+      </div>
+    </footer>
+  </body>
+</html>

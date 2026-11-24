@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#111510" />
+    <meta
+      name="description"
+      content="Попробуйте HoldBeat в браузере: таймер удержаний с отдыхом между подходами и звуковыми сигналами."
+    />
+    <title>HoldBeat — таймер подходов</title>
+    <link rel="icon" href="../media/icon.png" />
+    <link rel="stylesheet" href="../demo-shell.css" />
+    <link rel="stylesheet" href="holdbeat.css" />
+    <script src="holdbeat.js" defer></script>
+  </head>
+  <body class="hb">
+    <header class="hb-nav">
+      <a href="../#catalog">Все демо</a>
+      <a href="https://github.com/hacker-niki/HoldBeat">Исходники</a>
+    </header>
+    <main class="hb-main">
+      <header class="hb-intro">
+        <div>
+          <h1 lang="en">HoldBeat</h1>
+          <p>
+            Таймер для статических упражнений. Удерживайте положение до сигнала и отдыхайте между подходами.
+          </p>
+        </div>
+        <a
+          class="hb-download"
+          href="https://github.com/hacker-niki/HoldBeat/releases/latest/download/HoldBeat.apk"
+          >Скачать для Android</a
+        >
+      </header>
+      <div class="hb-studio">
+        <section class="hb-console" aria-label="Таймер">
+          <div class="hb-meter-info">
+            <span id="hb-phase" aria-live="polite">Готов к старту</span
+            ><span id="hb-round">Подход 1 из 2</span>
+          </div>
+          <div class="hb-clock">
+            <svg viewBox="0 0 240 240" class="hb-ring" aria-hidden="true">
+              <circle cx="120" cy="120" r="108" class="hb-ticks"></circle>
+              <circle cx="120" cy="120" r="97" class="hb-track"></circle>
+              <circle cx="120" cy="120" r="97" pathLength="100" class="hb-progress"></circle>
+            </svg>
+            <output id="hb-time" aria-label="Оставшееся время" aria-live="off">00:05</output>
+          </div>
+          <div class="hb-actions">
+            <button type="button" class="hb-primary" id="hb-toggle">Старт</button>
+            <button type="button" class="hb-secondary" id="hb-reset" disabled>Сброс</button>
+          </div>
+        </section>
+        <section class="hb-plan" aria-labelledby="hb-plan-title">
+          <h2 id="hb-plan-title">План тренировки</h2>
+          <fieldset id="hb-config">
+            <legend class="hb-sr">Длительность и число подходов</legend>
+            <label
+              >Программа
+              <select id="hb-preset">
+                <option value="quick">Быстрая проба</option>
+                <option value="plank">Планка</option>
+                <option value="custom">Своя тренировка</option>
+              </select>
+            </label>
+            <div class="hb-numbers">
+              <label
+                >Удержание, с
+                <input id="hb-work" type="number" min="1" max="5999" value="5" required inputmode="numeric"
+              /></label>
+              <label
+                >Отдых, с
+                <input id="hb-rest" type="number" min="0" max="5999" value="3" required inputmode="numeric"
+              /></label>
+              <label
+                >Подходы
+                <input id="hb-count" type="number" min="1" max="99" value="2" required inputmode="numeric"
+              /></label>
+            </div>
+          </fieldset>
+          <div class="hb-total"><span>Общее время</span><strong id="hb-total">00:13</strong></div>
+          <label class="hb-audio"><input id="hb-sound" type="checkbox" checked /> Звуковые сигналы</label>
+          <p class="hb-note">
+            Короткий тон начинает подход, два низких — отдых. Три восходящих ноты завершают тренировку.
+          </p>
+        </section>
+      </div>
+      <footer class="hb-footer">
+        Родственный проект <a href="https://github.com/hacker-niki/Chronometr">Chronometr</a> — секундомер с
+        периодическим сигналом.
+      </footer>
+    </main>
+  </body>
+</html>

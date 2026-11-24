@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#10151a" />
+    <title>Box Analyzer — размеры коробки</title>
+    <link rel="icon" href="../media/icon.png" />
+    <link rel="stylesheet" href="../demo-shell.css" />
+    <link rel="stylesheet" href="box-analyze.css" />
+    <script defer src="box-analyze.js"></script>
+  </head>
+  <body>
+    <nav class="shell-top" aria-label="Навигация">
+      <a class="home" href="../#catalog">← Все демо</a
+      ><a href="https://github.com/hacker-niki/box-analize">GitHub</a>
+    </nav>
+    <main class="lab-wrap">
+      <header class="lab-lead">
+        <h1>Box Analyzer</h1>
+        <p>
+          В исходном проекте модель оценивает габариты коробки по фотографии. В демо задай длину, ширину и
+          высоту, чтобы рассчитать объём. Коробку можно повернуть.
+        </p>
+      </header>
+      <div class="box-layout">
+        <section class="box-figure" aria-label="Модель коробки">
+          <canvas id="box-view" aria-label="Аксонометрическая проекция коробки"></canvas>
+          <label class="box-angle" for="box-angle"
+            ><span>Ракурс <output id="box-angle-value" for="box-angle">35°</output></span
+            ><input id="box-angle" type="range" min="10" max="80" value="35"
+          /></label>
+        </section>
+        <section class="box-controls lab-panel" aria-labelledby="box-title">
+          <h2 id="box-title">Габариты</h2>
+          <label class="box-range" for="box-length"
+            ><span>Длина <output id="box-length-value" for="box-length">34 см</output></span
+            ><input id="box-length" type="range" min="1" max="100" value="34"
+          /></label>
+          <label class="box-range" for="box-width"
+            ><span>Ширина <output id="box-width-value" for="box-width">18 см</output></span
+            ><input id="box-width" type="range" min="1" max="100" value="18"
+          /></label>
+          <label class="box-range" for="box-height"
+            ><span>Высота <output id="box-height-value" for="box-height">11 см</output></span
+            ><input id="box-height" type="range" min="1" max="100" value="11"
+          /></label>
+          <div class="box-result">
+            <h3>Объём</h3>
+            <output id="box-litres" for="box-length box-width box-height">6,732 л</output
+            ><output id="box-metres" for="box-length box-width box-height">0,006732 м³</output>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

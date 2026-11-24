@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#101820" />
+    <meta
+      name="description"
+      content="Собирайте точки на двоих или соревнуйтесь с ботом в браузерной адаптации THEGame2."
+    />
+    <title>THEGame2 — гонка за точками</title>
+    <link rel="icon" href="../media/icon.png" />
+    <link rel="stylesheet" href="../demo-shell.css" />
+    <link rel="stylesheet" href="dot-race.css" />
+    <script src="dot-race.js" defer></script>
+  </head>
+  <body class="dr">
+    <header class="dr-nav">
+      <a href="../#catalog">Все демо</a><a href="https://github.com/hacker-niki/THEGame2">Исходники C++</a>
+    </header>
+    <main class="dr-main">
+      <header class="dr-intro">
+        <h1 lang="en">THEGame2</h1>
+        <p>Гонка за точками. На поле всегда пять оранжевых целей. Подбирайте их раньше соперника.</p>
+      </header>
+      <section class="dr-game" aria-label="Игровое поле и счёт">
+        <div class="dr-bar">
+          <div class="dr-score">
+            <span class="dr-yellow">Жёлтый</span><strong id="dr-yellow">0</strong
+            ><span class="dr-split">/</span><strong id="dr-blue">0</strong><span class="dr-blue">Синий</span>
+          </div>
+          <span class="dr-target" id="dr-target">До 5 очков</span>
+        </div>
+        <canvas
+          id="dr-arena"
+          width="800"
+          height="470"
+          tabindex="0"
+          aria-label="Арена. Управляйте жёлтым игроком стрелками или укажите место касанием."
+        ></canvas>
+        <p id="dr-status" class="dr-status" aria-live="polite">Готовы к матчу</p>
+      </section>
+      <section class="dr-controls" aria-label="Настройки и управление">
+        <div class="dr-options">
+          <label
+            >Соперник
+            <select id="dr-mode">
+              <option value="bot">Бот</option>
+              <option value="human">Второй игрок</option>
+            </select></label
+          >
+          <label
+            >Длина матча
+            <select id="dr-goal">
+              <option value="5">Быстрый · 5 очков</option>
+              <option value="20">Оригинал · 20 очков</option>
+            </select></label
+          >
+        </div>
+        <div class="dr-actions">
+          <button type="button" id="dr-toggle">Начать матч</button
+          ><button type="button" id="dr-reset" disabled>Сброс</button>
+        </div>
+      </section>
+      <p class="dr-help" id="dr-help">
+        Управляйте жёлтым кругом стрелками или касайтесь поля, чтобы задать направление. Синим играет бот.
+      </p>
+    </main>
+  </body>
+</html>

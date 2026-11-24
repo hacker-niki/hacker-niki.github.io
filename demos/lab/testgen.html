@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#10151a" />
+    <title>TestGen · Демотека</title>
+    <link rel="icon" href="../media/icon.png" />
+    <link rel="stylesheet" href="../demo-shell.css" />
+    <link rel="stylesheet" href="playground.css" />
+    <script defer src="testgen.js"></script>
+  </head>
+  <body class="testgen">
+    <nav class="shell-top" aria-label="Навигация">
+      <a href="../#catalog" class="home">Все демо</a
+      ><a href="https://github.com/hacker-niki/testgen">Исходники на GitHub</a>
+    </nav>
+    <main class="lab-wrap">
+      <header class="lab-lead">
+        <span class="lab-label">Обучение · Браузерная версия</span>
+        <h1>TestGen</h1>
+        <p>
+          Собери тест из небольшого словаря, пройди его и забери вопросы в Moodle XML. Здесь вопросы строятся
+          по парам «термин — определение».
+        </p>
+      </header>
+      <section class="lab-panel" id="editor">
+        <h2>Материал теста</h2>
+        <label for="topic">Набор терминов</label
+        ><select id="topic" class="lab-select">
+          <option value="sql">Основы SQL</option>
+          <option value="audio">Цифровой звук</option>
+        </select>
+        <label for="terms">По одной паре на строку</label
+        ><textarea id="terms" class="lab-field" rows="7" maxlength="6000"></textarea>
+        <div role="alert" id="issue"></div>
+        <div class="lab-actions"><button class="lab-button primary" id="build">Составить тест</button></div>
+      </section>
+      <section class="lab-panel" id="quiz" hidden>
+        <div class="quiz-top">
+          <p id="progress" class="lab-label"></p>
+          <button class="lab-button" id="edit">К материалу</button>
+        </div>
+        <h2 id="question"></h2>
+        <fieldset id="answers"><legend>Выбери термин</legend></fieldset>
+        <div class="lab-actions">
+          <button class="lab-button primary" id="next" disabled>Далее</button
+          ><button class="lab-button" id="export">Скачать Moodle XML</button>
+        </div>
+      </section>
+      <section class="lab-panel" id="score" hidden>
+        <h2>Результат</h2>
+        <p id="points" class="readout"></p>
+        <ol id="review"></ol>
+        <div class="lab-actions">
+          <button class="lab-button primary" id="again">Пройти ещё раз</button
+          ><button class="lab-button" id="change">Изменить материал</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

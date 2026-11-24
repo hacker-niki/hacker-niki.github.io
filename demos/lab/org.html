@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#121917" />
+    <title>Org API — дерево подразделений</title>
+    <link rel="icon" href="../media/icon.png" />
+    <link rel="stylesheet" href="../demo-shell.css" />
+    <link rel="stylesheet" href="api-labs.css" />
+    <script src="org.js" defer></script>
+  </head>
+  <body class="api-lab">
+    <header class="lab-nav">
+      <a href="../#catalog">← Все демо</a><a href="https://github.com/hacker-niki/go-test">Исходники ↗</a>
+    </header>
+    <main class="lab-space">
+      <h1>Org API</h1>
+      <p class="lab-lead">
+        Запроси состав отдела или перемести целую ветку. Локальная песочница воспроизводит запросы Go API на
+        учебной оргструктуре.
+      </p>
+      <div class="lab-duo">
+        <section class="lab-box">
+          <h2>Запрос отдела</h2>
+          <form id="org-get" class="lab-form">
+            <label>Подразделение<select id="org-id"></select></label>
+            <label
+              >Глубина дерева<select id="org-depth">
+                <option>0</option>
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select></label
+            >
+            <label class="check"
+              ><input type="checkbox" id="org-employees" checked /> Включить сотрудников</label
+            ><button type="submit">Запросить отдел</button>
+          </form>
+          <hr class="lab-divider" />
+          <h2>Перенос ветки</h2>
+          <form id="org-move" class="lab-form">
+            <label>Какой отдел перенести<select id="org-from"></select></label
+            ><label>Новый родитель<select id="org-parent"></select></label>
+            <button type="submit">Переместить отдел</button>
+          </form>
+        </section>
+        <section class="lab-box">
+          <h2>Структура</h2>
+          <ul id="org-tree" class="tree-root"></ul>
+          <p id="org-status" class="lab-status" role="status"></p>
+          <details class="lab-wire" open>
+            <summary id="org-route">Запрос и JSON</summary>
+            <pre id="org-response"></pre>
+          </details>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#10151a" />
+    <title>Квант · Демотека</title>
+    <link rel="icon" href="../media/icon.png" />
+    <link rel="stylesheet" href="../demo-shell.css" />
+    <link rel="stylesheet" href="playground.css" />
+    <script defer src="quant.js"></script>
+  </head>
+  <body class="quant">
+    <nav class="shell-top" aria-label="Навигация">
+      <a href="../#catalog" class="home">Все демо</a
+      ><a href="https://github.com/hacker-niki/assistant">Исходники на GitHub</a>
+    </nav>
+    <main class="lab-wrap">
+      <header class="lab-lead">
+        <span class="lab-label">Голосовой помощник · Демо команд</span>
+        <h1>Квант</h1>
+        <p>
+          Введи команду или выбери пример. В этой версии можно послушать ответ с помощью синтезатора речи
+          браузера.
+        </p>
+      </header>
+      <section class="lab-panel">
+        <div id="history" role="log" aria-label="Разговор">
+          <p class="reply">
+            <b>Квант</b> Привет! Спроси время, попроси подбросить монетку или повторить фразу.
+          </p>
+        </div>
+        <div class="suggestions" aria-label="Примеры">
+          <button class="lab-button" data-command="Который сейчас час?">Спросить время</button
+          ><button class="lab-button" data-command="Подбрось монетку">Подбросить монетку</button
+          ><button class="lab-button" data-command="Повтори: раз, два, три">Повторить фразу</button>
+        </div>
+        <form id="prompt">
+          <label for="phrase">Команда</label>
+          <div class="prompt-row">
+            <input
+              required
+              id="phrase"
+              class="lab-field"
+              maxlength="220"
+              autocomplete="off"
+              placeholder="Например, «привет»"
+            /><button class="lab-button primary" type="submit">Отправить</button>
+          </div>
+        </form>
+        <label id="sound-option" class="checkbox"
+          ><input type="checkbox" id="voice" /> Озвучивать новые ответы</label
+        >
+      </section>
+    </main>
+  </body>
+</html>

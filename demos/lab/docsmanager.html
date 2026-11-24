@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#111a26" />
+    <title>Docs Manager — документ по шаблону</title>
+    <link rel="icon" href="../media/icon.png" />
+    <link rel="stylesheet" href="../demo-shell.css" />
+    <link rel="stylesheet" href="docsmanager.css" />
+    <script defer src="docsmanager-zip.min.js"></script>
+    <script defer src="docsmanager.js"></script>
+  </head>
+  <body>
+    <main class="dm-page">
+      <nav aria-label="Навигация">
+        <a href="../#catalog">← Все демо</a><a href="https://github.com/hacker-niki/docsManager">GitHub</a>
+      </nav>
+      <header class="dm-heading">
+        <h1>Docs Manager</h1>
+        <p>Заполни поля шаблона и скачай готовый документ Word. Файл обрабатывается на устройстве.</p>
+      </header>
+      <div class="dm-layout">
+        <section class="dm-editor" aria-labelledby="dm-template-title">
+          <h2 id="dm-template-title">Шаблон</h2>
+          <div class="dm-upload">
+            <label class="dm-file"
+              ><span>Открыть DOCX</span
+              ><input
+                id="dm-file"
+                type="file"
+                accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            /></label>
+            <button type="button" id="dm-example">Взять пример</button>
+          </div>
+          <p class="dm-help">
+            Для своего шаблона добавь в текст или таблицу поля вида <code>%%Название%%</code>. Максимальный
+            размер файла — 20 МиБ.
+          </p>
+          <p id="dm-message" role="status"></p>
+          <form id="dm-form">
+            <div id="dm-fields"></div>
+            <button class="dm-save" id="dm-save" type="submit" disabled>Скачать документ</button>
+          </form>
+        </section>
+        <section class="dm-preview" aria-label="Текст документа">
+          <div class="dm-caption"><span>Предпросмотр текста</span><span id="dm-name"></span></div>
+          <article id="dm-content" aria-label="Пример заполнения"></article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

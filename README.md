@@ -1,8 +1,8 @@
-# Демотека Никиты Сенько
+# Портфолио hacker_niki
 
-[Открыть демотеку](https://hacker-niki.github.io/demos/) · [Личное портфолио](https://hacker-niki.github.io/)
+[Обо мне](https://hacker-niki.github.io/#about) · [Демотека](https://hacker-niki.github.io/demos/)
 
-Коллекция из 12 публичных проектов. В каталоге можно перейти к полной игре THEGame и оригинальной веб-версии тюнера kTone. Десять других демо запускаются прямо с GitHub Pages, включая таймер HoldBeat, генератор DOCX, TestGen и три учебные песочницы для API и сетей.
+В демотеке пять проектов. На GitHub Pages можно сыграть в музыкальный раннер THEGame, заполнить шаблон DOCX в Docs Manager, запустить тренировку в HoldBeat и посмотреть объёмную модель в Box Analyzer. Для kTone доступны веб-тюнер оригинального автора и исходники моего Android-порта.
 
 ## Локальный запуск
 
@@ -12,8 +12,8 @@
 python3 -m http.server 8000
 ```
 
-Откройте [каталог на localhost](http://localhost:8000/demos/). Файлы DOCX и словари для тестов обрабатываются в браузере.
+Откройте [портфолио](http://localhost:8000/#about) или [каталог демо](http://localhost:8000/demos/). Docs Manager обрабатывает файлы DOCX в браузере.
 
-## Авторы и исходники
+## Авторы и лицензии
 
-Ссылки на исходные проекты есть в каждой карточке. Для kTone в каталоге указан Android-порт hacker-niki и отдельно открывается веб-версия автора тюнера. Страница резюме основана на Portfolio-Template Пратика Мишры. [Лицензия исходного шаблона](LICENSE) · [Лицензия JSZip](demos/lab/docsmanager-zip-LICENSE.txt).
+Ссылки на исходники есть в карточках проектов. [Лицензия исходного шаблона портфолио](LICENSE) · [Лицензия JSZip для работы с DOCX](demos/lab/docsmanager-zip-LICENSE.txt).

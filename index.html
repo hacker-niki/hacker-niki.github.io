@@ -1,376 +1,99 @@
-<!DOCTYPE html>
-<html class="no-js">
-
+<!doctype html>
+<html lang="ru">
 <head>
-  <!-- Add Your Title -->
-  <title>hacker-niki</title>
-
-  <!-- All Meta Tags -->
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-
-  <!-- All Link tags -->
-  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-114x114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-144x144-precomposed.png">
-  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <!-- All script tags -->
-  <script>document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-  <script src="js/vendor/jquery.hashchange.min.js"></script>
-  <script src="js/vendor/jquery.easytabs.min.js"></script>
-  <script src="js/main.js"></script>
-
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101c20">
+  <meta name="description" content="hacker_niki — бэкенд-разработчик, 3+ года опыта. Golang, PHP, C++ и Python. Игры и инструменты с открытым кодом и демо.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="hacker_niki · Бэкенд, инструменты и игры">
+  <meta property="og:description" content="3+ года опыта. Golang, PHP, C++ и Python. Избранные проекты Никиты с демо и исходниками.">
+  <meta property="og:image" content="https://hacker-niki.github.io/assets/portfolio/workstation.webp">
+  <link rel="canonical" href="https://hacker-niki.github.io/">
+  <link rel="icon" href="assets/portfolio/mark.png">
+  <link rel="preload" href="assets/portfolio/workbench.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/portfolio/rubik.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/portfolio.css">
+  <title>hacker_niki · Бэкенд-разработчик</title>
 </head>
-
-<!-- Start of Body Tag -->
-
-<body class="bg-fixed bg-1">
-  <div class="main-container">
-    <div class="main wrapper clearfix">
-
-      <!-- Header Start -->
-      <header id="header">
-        <div id="logo">
-          <h6>
-            Nikita Senko
-          </h6>
-          <h4>
-             Backend software developer
-          </h4>
+<body id="about">
+  <a class="skip" href="#intro">К содержанию</a>
+  <header class="top">
+    <div class="frame navbar">
+      <a class="brand" href="#about" aria-label="hacker_niki, начало страницы"><span class="prompt" aria-hidden="true">›_</span>hacker_niki</a>
+      <nav aria-label="Навигация">
+        <a class="nav-about" href="#about">Обо мне</a>
+        <a href="#portfolio">Проекты</a>
+        <a class="nav-contact" href="#contact">Контакт</a>
+        <a class="nav-github" href="https://github.com/hacker-niki">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="intro" aria-labelledby="nickname">
+      <div class="frame hero-layout">
+        <div class="intro-copy">
+          <p class="role"><span class="spark" aria-hidden="true">✳</span> Бэкенд-разработчик</p>
+          <h1 id="nickname" aria-label="hacker_niki">hacker<span class="accent"><span class="cursor">_</span>niki</span></h1>
+          <p class="lede">Привет, я Никита. У меня <strong>3+ года опыта</strong> в&nbsp;разработке. Пишу серверные API, делаю инструменты для работы с&nbsp;данными и&nbsp;собираю игры.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#portfolio">Смотреть проекты <span aria-hidden="true">↓</span></a>
+            <a class="text-action" href="https://t.me/hacker_niki">Telegram <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-      </header>
-
-      <!-- Text "hello world" -->
-      <header id="header">
-        <div id="helloworld">
-          <h1>
-            Hello, World !
-          </h1>
-        </div>
-      </header>
-
-      <!-- Main Tab Container -->
-      <div id="tab-container" class="tab-container">
-
-        <!-- Tab List -->
-        <ul class='etabs'>
-
-          <li class='tab' id="tab-about">
-            <a href="#about">
-              <i class="icon-user"></i>
-              <span>
-                About Me
-              </span>
-            </a>
-          </li>
-
-          <li class='tab'>
-            <a href="#resume">
-              <i class="icon-file-text"></i>
-              <span>
-                Skills
-              </span>
-            </a>
-          </li>
-
-          <li class='tab'>
-            <a href="#portfolio">
-              <i class="icon-heart"></i>
-              <span>
-                Projects
-              </span>
-            </a>
-          </li>
-
-          <li class='tab'>
-            <a href="#contact">
-              <i class="icon-envelope"></i>
-              <span>
-                Contact
-              </span>
-            </a>
-          </li>
-
-        </ul>
-        <!-- End Tab List -->
-
-        <!-- ----------------------------------------------------------------------------------- -->
-        <!-- Code for differents Tabs strat from here. -->
-        <div id="tab-data-wrap">
-
-          <!-- About Tab Data -->
-          <div id="about">
-            <section class="clearfix">
-              <div class="g2">
-                <div class="photo">
-                  <img src="./images/my.jpg" alt="Your alt text">
-                </div>
-                <div class="info">
-                  <h2>
-                    <p></p>
-                    Nikita Senko
-                  </h2>
-                  <h4>
-                    https://github.com/hacker-niki
-                  </h4>
-                  <p>
-                    As a student and developer, I have a passion for technology and a desire to develop my skills in software development using programming languages such as C++ and Python. I am familiar with programming concepts and have practical experience in building applications using these languages.
-
-In addition to my technical skills, I have strong problem-solving abilities and a willingness to learn and adapt to new technologies and programming techniques. As a student, I am eager to explore new areas of programming and to gain hands-on experience through internships or personal projects.
-
-As a C++ and Python developer, I have experience using software development tools such as IDEs, version control systems, and debugging tools. I also have experience with web development technologies such as HTML, CSS, and JavaScript.
-                  </p>
-                  </p>
-                </div>
-              </div>
-
-              <div class="g1">
-                <div class="main-links sidebar">
-                  <ul>
-                    <li>
-                      <a href="#resume">
-                        View My Skills
-                      </a>
-                    </li>
-                    <li>
-                      <a href="demos/">
-                        Explore My Project Demos
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#contact">
-                        Hire me for your next project
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="break">
-              </div>
-              <div class="contact-info">
-                <div class="g1">
-                  <div class="item-box clearfix">
-                    <i class="icon-envelope"></i>
-                    <div class="item-data">
-                      <h3>
-                        <a href="mailto:nktsenko@gmail.com">
-                          nktsenko@gmail.com
-                        </a>
-                      </h3>
-                      <p>
-                        Email Address
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="g1">
-                  <div class="item-box clearfix">
-                    <i class="icon-facebook"></i>
-                    <div class="item-data">
-                      <h3>
-                        <a href="https://t.me/qNIKITAp">
-                          @qNIKITAp
-                        </a>
-                      </h3>
-                      <p>
-                        Telegram Profile
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="g1">
-                  <div class="item-box clearfix">
-                    <i class="icon-twitter"></i>
-                    <div class="item-data">
-                      <h3>
-                        <a href="https://vk.com/nikita_senko">
-                          nikita_senko
-                        </a>
-                      </h3>
-                      <p>
-                        My VK priffie
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-          <!-- End About Tab Data -->
-          <!-- ----------------------------------------------------------------------------------- -->
-          <!-- skills Tab Data -->
-          <div id="resume">
-            <section class="clearfix">
-              <div class="g2">
-                <h3>
-                  Programming
-                </h3>
-                <div class="meter emerald">
-                  <span style="width: 70%">
-                    <span>
-                      C++
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 60%">
-                    <span>
-                      Python
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 50%">
-                    <span>
-                      C#
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 35%">
-                    <span>
-                      PHP
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 45%">
-                    <span>
-                      Kotlin
-                    </span>
-                  </span>
-                </div>
-                <div class="break"></div>
-              </div>
-
-              <div class="g1">
-                <h3>
-                  Skills
-                </h3>
-                <div class="meter emerald">
-                  <span style="width: 60%">
-                    <span>
-                      Algorithms
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 65%">
-                    <span>
-                      Data structures
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 80%">
-                    <span>
-                      Debugging
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 45%">
-                    <span>
-                      Git version control
-                    </span>
-                  </span>
-                </div>
-                <div class="meter emerald">
-                  <span style="width: 75%">
-                    <span>
-                      CLion
-                    </span>
-                  </span>
-                </div>
-              </div>
-
-              <div class="g2">
-                <h3>
-                  Hobbies
-                </h3>
-                <span class="label label-info">Programming</span>
-                <span class="label label-info">Photography</span>
-                <span class="label label-info">PC Gaming</span>
-              </div>
-            </section>
-          </div>
-
-          <!-- End skills Tab Data -->
-          <!-- ----------------------------------------------------------------------------------- -->
-          <!-- Projects Tab Data -->
-          <div id="portfolio">
-            <section class="clearfix" aria-label="Project demos">
-              <h3>Демотека</h3>
-              <p>Игры, приложения и инструменты Никиты Сенько. Попробуйте проекты прямо в браузере.</p>
-              <a href="demos/"><img src="demos/media/thegame.webp" width="640" style="max-width:100%;height:auto" alt="THEGame — куб на трассе в закатных горах"></a>
-              <p><a href="demos/"><strong>Открыть каталог демо →</strong></a></p>
-            </section>
-          </div>
-          <!-- End Projects tab -->
-          <!-- ----------------------------------------------------------------------------------- -->
-          <!-- Contact Tab Data -->
-          <div id="contact">
-            <section class="clearfix">
-              <div class="g1">
-                <div class="sny-icon-box">
-                  <div class="sny-icon">
-                    <i class="icon-globe"></i>
-                  </div>
-                  <div class="sny-icon-content">
-                    <h4>
-                      Address
-                    </h4>
-                    <p>
-                      Belarus, Minsk Dzerzhinsky 95
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="g1">
-                <div class="sny-icon-box">
-                  <div class="sny-icon">
-                    <i class="icon-phone"></i>
-                  </div>
-                  <div class="sny-icon-content">
-                    <h4>
-                      E-mail
-                    </h4>
-                    <p>
-                      nktsenko@gmail.com<br />hacker.niki@gmail.com
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="g1">
-                <div class="sny-icon-box">
-                  <div class="sny-icon">
-                    <i class="icon-user"></i>
-                  </div>
-                  <div class="sny-icon-content">
-                    <h4>
-                      About Me
-                    </h4>
-                    <p>
-                      As a software backend junior developer, I have experience in building and maintaining server-side applications using programming languages such as C++, Python, and Java. I'm skilled in working with databases, APIs, and software development tools to create robust and efficient software solutions.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="break"></div>
-            </section>
-          </div>
-          <!-- End Contact Data -->
-          <!-- ----------------------------------------------------------------------------------- -->
-        </div>
+        <div class="hero-art"><img src="assets/portfolio/workstation.webp" width="940" height="764" fetchpriority="high" alt="Пиксельная мастерская с ретрокомпьютером и игрой на экране."></div>
       </div>
+    </section>
+    <section class="stack" id="resume" aria-labelledby="stack-title">
+      <div class="frame stack-layout">
+        <h2 id="stack-title">Мой стек</h2>
+        <ul>
+          <li><i aria-hidden="true"></i>Golang</li><li><i aria-hidden="true"></i>PHP</li>
+          <li><i aria-hidden="true"></i>C++</li><li><i aria-hidden="true"></i>Python</li>
+        </ul>
+      </div>
+    </section>
+    <section class="frame projects" id="portfolio" aria-labelledby="projects-title">
+      <header class="section-head">
+        <h2 id="projects-title">Избранные проекты<span>.</span></h2>
+        <a class="outline-button" href="demos/">Все демо <span aria-hidden="true">↗</span></a>
+      </header>
+      <div class="project-grid">
+        <article class="project">
+          <a class="project-image game" href="https://hacker-niki.github.io/THEGame/play/" aria-label="Играть в THEGame"><img src="demos/media/thegame.webp" width="1280" height="720" loading="lazy" alt=""></a>
+          <div class="project-body">
+            <p class="meta">Godot <span>/</span> 3D-раннер</p>
+            <h3><a href="https://hacker-niki.github.io/THEGame/play/">THEGame</a></h3>
+            <p>Уводи куб от препятствий в такт музыке. Можно пройти готовую трассу или собрать свою из любимого трека.</p>
+            <div class="project-links"><a href="https://hacker-niki.github.io/THEGame/play/">Играть в браузере <span aria-hidden="true">↗</span></a><a href="https://github.com/hacker-niki/THEGame">Исходники</a></div>
+          </div>
+        </article>
+        <article class="project">
+          <a class="project-image docs" href="demos/lab/docsmanager.html" aria-label="Открыть демо Docs Manager"><img src="demos/media/docsmanager.webp" width="800" height="430" loading="lazy" alt=""></a>
+          <div class="project-body">
+            <p class="meta">C++ / Qt <span>/</span> Документы</p>
+            <h3><a href="demos/lab/docsmanager.html">Docs Manager</a></h3>
+            <p>Из одного шаблона — готовый документ Word. Открой пример или свой DOCX, заполни поля и скачай результат.</p>
+            <div class="project-links"><a href="demos/lab/docsmanager.html">Собрать документ <span aria-hidden="true">↗</span></a><a href="https://github.com/hacker-niki/docsManager">Исходники</a></div>
+          </div>
+        </article>
+      </div>
+      <div class="more-projects">
+        <h3>Ещё проекты</h3>
+        <ul>
+          <li><a href="demos/lab/box-analyze.html"><b>Box Analyzer</b><span>Компьютерное зрение для коробок · в разработке</span><i aria-hidden="true">↗</i></a></li>
+          <li><a href="demos/lab/holdbeat.html"><b>HoldBeat</b><span>Таймер подходов со звуковым сигналом</span><i aria-hidden="true">↗</i></a></li>
+          <li><a href="https://github.com/hacker-niki/kTone"><b>kTone</b><span>Мой Android-порт хроматического тюнера</span><i aria-hidden="true">↗</i></a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="frame contact-layout">
+        <div><h2 id="contact-title">На связи<span>.</span></h2><p>Для вопросов о проектах и предложений по разработке — пиши в Telegram.</p></div>
+        <a href="https://t.me/hacker_niki" class="telegram">@hacker_niki <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="frame foot"><a class="brand" href="#about"><span class="prompt" aria-hidden="true">›_</span>hacker_niki</a><a href="https://github.com/hacker-niki">GitHub ↗</a></div></footer>
 </body>
-
 </html>
